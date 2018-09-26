@@ -33,14 +33,14 @@ class LoadUiFile(QtWidgets.QWidget):
 
 def start():
     """Start up function."""
-    global interface  # pylint: disable=global-statement
+    global interface
     interface = LoadUiFile()
     interface.show()
 
 
 def start_from_main():
     app = QtWidgets.QApplication()
-    global interface  # pylint: disable=global-statement
+    global interface
     interface = LoadUiFile()
     interface.show()
     app.exec_()
